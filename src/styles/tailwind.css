@@ -13,3 +13,18 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+* {
+    box-sizing: border-box;
+}
+
+@layer components {
+    .input-login {
+        @apply bg-[#e4e5e6] text-base p-2 mt-3 mb-3 rounded-t-md w-full border-solid border-b-2 border-[#292663]
+    }
+    .checkbox {
+        @apply h-4 w-4 border rounded-sm bg-white mt-1 align-top mr-2 cursor-pointer
+    }
+    .login-button {
+        @apply w-full mt-6 bg-[#1f1d48] text-white font-normal p-3 text-sm border-solid border-2 border-[#20a8d8] active:scale-[0.98] transition-all duration-200
+    }
+}
