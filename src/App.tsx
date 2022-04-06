@@ -4,6 +4,7 @@ import LoginForm from "./components/register/LoginForm";
 import { Route, Routes } from "react-router-dom";
 import Card from "./components/Parcel/Card";
 import cardImage from "./static/ahihi.jpg";
+import Popcast from "./components/popcast/Popcast";
 function App() {
   const logo = "https://cms-web-staging.kienlongbank.co/assets/img/main-logo.svg";
   return (
@@ -13,7 +14,7 @@ function App() {
       {/* <LoginPage></LoginPage> */}
       {/* <LoginForm logo={logo}></LoginForm> */}
       <Routes>
-        <Route path="/" element={<LoginForm logo={logo}></LoginForm>}></Route>
+        <Route path="/login" element={<LoginForm logo={logo}></LoginForm>}></Route>
         <Route path="/card" element={
           <Card
             title="Parcel+TypeScript+React+Tailwind Template"
@@ -25,6 +26,7 @@ function App() {
             tags={["#parcel", "#typescript", "#react", "#tailwind"]}
           />
         }></Route>
+        <Route path="/" element={<Popcast></Popcast>}></Route>
       </Routes>
     </div>
   );

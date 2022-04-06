@@ -27,4 +27,7 @@
     .login-button {
         @apply w-full mt-6 bg-[#1f1d48] text-white font-normal p-3 text-sm border-solid border-2 border-[#20a8d8] active:scale-[0.98] transition-all duration-200
     }
+    .navbar-menu-item {
+        @apply block p-2 text-white bg-clip-text hover:text-transparent bg-gradient-to-r from-pink-500 to-violet-500 duration-700 border-b-2 border-transparent hover:border-indigo-800 duration-[2000]
+    }
 }

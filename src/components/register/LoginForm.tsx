@@ -59,7 +59,7 @@ export default function LoginForm({
                     />
 
                     <input className="input-login"
-                        type="text"
+                        type="password"
                         placeholder="Mật khẩu*"
                         value={password}
                         onChange={(event) => setCredentials({
