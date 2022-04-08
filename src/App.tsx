@@ -1,9 +1,13 @@
 import React from "react";
 
 import LoginForm from "./components/register/LoginForm";
+import "@material-tailwind/react/tailwind.css";
+
 import { Route, Routes } from "react-router-dom";
 import Card from "./components/Parcel/Card";
 import cardImage from "./static/ahihi.jpg";
+import { ButtonHandle, ButtonHandle2 } from "./components/learn/ButtonHandle";
+import Pexels from "./components/learn/Pexels";
 function App() {
   const logo = "https://cms-web-staging.kienlongbank.co/assets/img/main-logo.svg";
   return (
@@ -12,8 +16,8 @@ function App() {
       {/* <LoginForm logo={logo}></LoginForm> */}
       {/* <LoginPage></LoginPage> */}
       {/* <LoginForm logo={logo}></LoginForm> */}
-      <Routes>
-        <Route path="/" element={<LoginForm logo={logo}></LoginForm>}></Route>
+      {/* <Routes>
+        <Route path="/" element={<NetFlix></NetFlix>}></Route>
         <Route path="/card" element={
           <Card
             title="Parcel+TypeScript+React+Tailwind Template"
@@ -25,8 +29,9 @@ function App() {
             tags={["#parcel", "#typescript", "#react", "#tailwind"]}
           />
         }></Route>
-      </Routes>
-    </div>
+      </Routes> */}
+      <Pexels></Pexels>
+      </div>
   );
 }
 
